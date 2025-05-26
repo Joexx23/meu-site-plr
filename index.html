@@ -1,71 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Baixe seu PDF</title>
   <style>
     body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
+      background-color: #f0f4f8; /* cor clara */
+      color: #0d1a3a; /* azul escuro */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
     }
     .container {
-      background-color: rgba(0, 0, 0, 0.85);
-      padding: 40px;
-      border-radius: 10px;
+      background-color: #e1e9f8; /* azul claro suave */
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(13, 26, 58, 0.2);
       text-align: center;
       max-width: 400px;
-      width: 100%;
+      width: 90%;
     }
-    input, button {
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+    input[type="email"], button {
       width: 100%;
       padding: 15px;
       margin-bottom: 15px;
-      border: none;
-      border-radius: 5px;
+      border-radius: 8px;
+      border: 1.5px solid #0d1a3a;
       font-size: 16px;
+      transition: border-color 0.3s ease;
     }
-    input {
-      color: #000;
+    input[type="email"] {
+      color: #0d1a3a;
+      background-color: #fff;
+    }
+    input[type="email"]:focus {
+      border-color: #3950a1;
+      outline: none;
     }
     button {
-      background-color: #e50914;
-      color: white;
+      background-color: #0d1a3a;
+      color: #f0f4f8;
+      border: none;
       cursor: pointer;
+      font-weight: 600;
     }
     button:hover {
-      background-color: #f6121d;
+      background-color: #3950a1;
     }
     .footer {
-      margin-top: 10px;
-      font-size: 12px;
-      color: #888;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #627497;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Baixe seu PDF</h1>
-    <p>Digite seu e-mail para acessar</p>
+    <p>Digite seu e-mail para acessar o conteúdo</p>
     <form action="https://formsubmit.co/vinigedozz@gmail.com" method="POST">
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      
       <!-- Redireciona para o PDF -->
-      <input type="hidden" name="_next" value="https://joexx23.github.io/meu-site-plr/arquivos/Mentalidade.pdf">
-
+      <input type="hidden" name="_next" value="https://joexx23.github.io/meu-site-plr/arquivos/Mentalidade.pdf" />
+      
       <!-- Desativa captcha -->
-      <input type="hidden" name="_captcha" value="false">
-
+      <input type="hidden" name="_captcha" value="false" />
+      
       <button type="submit">Acessar PDF</button>
     </form>
     <div class="footer">
       © 2025 flow state
     </div>
   </div>
+</body>
+</html>
+
 </body>
 </html>
